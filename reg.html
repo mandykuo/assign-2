@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> 報名表單 </title>
+
+		<style>
+
+		body {
+			background-color: #e0ffdd;
+			background: -webkit-linear-gradient(left, #ffe2fe , #e0ffdd);
+		}
+
+		#form {
+		width: 600px;
+  		height: 300px;
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		margin: -145px 0 0 -50px;
+  	}
+
+  		#name {
+  			border-color: transparent;
+  			height: 30px;
+  			width: 200px;
+  			margin-bottom: 20px;
+  		}
+
+  		#college {
+  			border-color: transparent;
+  			height: 30px;
+  			width: 200px;
+  			margin-bottom: 20px;
+  		}
+
+  		#phone {
+  			border-color: transparent;
+  			height: 30px;
+  			width: 200px;
+  			margin-bottom: 20px;
+  		}
+
+  		#email {
+  			border-color: transparent;
+  			height: 30px;
+  			width: 200px;
+  			margin-bottom: 20px;
+  		}
+
+  		#birthday {
+  			border-color: transparent;
+  			height: 30px;
+  			width: 200px;
+  			margin-top: 20px;
+  			margin-bottom: 20px;
+  		}
+
+  		#form input:valid {
+            background-color: #39b387;
+        }
+
+        #form select:valid {
+            background-color: #39b387;
+        }
+
+
+  		button {
+  			background-color: #32906e;
+  			border: none;
+  			color: white;
+  			height: 30px;
+  			width: 205px;
+  			margin-top: 20px;
+  			margin-bottom: 20px;
+  			text-align: center;
+  			display: inline-block;
+  			font-size: 12px;
+  		}
+
+		</style>
+
+	</head>
+    <body>
+
+        <section id="form">
+			<h2> [ 報名表單 ] </h2>
+			<form action="https://docs.google.com/forms/d/e/1FAIpQLScM4B6u7nOkNQqUOlSBn7fKXm5cjuno14nyCKRlA4XyjSY9Qg/formResponse" method="get">
+
+				<div id="name">
+				<label for="name"></label><br>
+				<input type="text" name="entry.1339495092" id="name" required="required" size="20" placeholder="姓名"><br>
+				</div>
+
+				<div id="college">
+				<label for="college"></label><br>
+				<select name="entry.1944781450" id="college" required="required">
+    				<option value="" selected>學院</option>
+					<option value="文學院" id="文學院">文學院</option>
+					<option value="理學院" id="理學院">理學院</option>
+					<option value="社會科學學院" id="社會科學學院">社會科學學院</option>
+					<option value="法學院" id="法學院">法學院</option>
+					<option value="商學院" id="商學院">商學院</option>
+					<option value="外國語文學院" id="外國語文學院">外國語文學院</option>
+					<option value="傳播學院" id="傳播學院">傳播學院</option>
+					<option value="國際事務學院" id="國際事務學院">國際事務學院</option>
+					<option value="教育學院" id="教育學院">教育學院</option>
+				</select><br>
+				</div>
+
+				<div id="phone">
+				<label for="phone"></label><br>
+				<input type="tel" pattern="[0-9]{10}" name="entry.795504394" id="phone" required="required" size="20" maxlength="10" placeholder="手機"><br>
+				</div>
+
+				<div id="email">
+				<label for="email"></label><br>
+				<input type="email" name="entry.560282373" id="email" required="required" size="30" placeholder="E-mail"><br>
+				</div>
+
+				<div id="birthday">
+				<input type="date" name="entry.324774019" id="birthday">
+				</div>
+
+				<input type="hidden" name="entry.189820201" value="103104048">
+
+				<div id="sub">
+				<button type="submit" value="註冊">註冊</button>
+				</div>
+			</form>
+		</section>
+    </body>
+</html>
